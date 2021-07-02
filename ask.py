@@ -35,6 +35,8 @@ def main():
     # Determine top sentence matches
     matches = top_sentences(query, sentences, idfs, n=SENTENCE_MATCHES)
     for match in matches:
+        match = re.sub("\[[0-9]+\]", "", match)
         print(match)
+        print()
 
 main()
