@@ -6,7 +6,7 @@ import sys
 
 def main():
     if len(sys.argv) != 2:
-        sys.exit("Usage: python questions.py corpus")
+        sys.exit("Usage: python ask.py corpus")
     files = load_files(sys.argv[1])
     
     with open(os.path.join("pickles", "words.pickle"), "rb") as f1:
